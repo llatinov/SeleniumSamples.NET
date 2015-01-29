@@ -31,8 +31,8 @@ namespace Utf8icons
             ((IJavaScriptExecutor)webDriver).
                 ExecuteScript("document.getElementsByClassName('cancel')[0].click();");
 
-            // Locate element with jQuery
-            element = (IWebElement)((IJavaScriptExecutor)webDriver).ExecuteScript("return $(span.cancel')[0]");
+            // Locate same element with jQuery
+            element = (IWebElement)((IJavaScriptExecutor)webDriver).ExecuteScript("return $('span.cancel')[0]");
             // Debug info
             isDisplayed = element.Displayed; // false
             width = element.Size.Width; // 0
