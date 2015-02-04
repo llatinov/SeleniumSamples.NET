@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 
-namespace Utf8icons
+namespace AutomationRhapsody.Utf8icons
 {
     class Program
     {
