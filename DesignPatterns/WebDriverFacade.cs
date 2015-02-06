@@ -10,7 +10,7 @@ namespace AutomationRhapsody.DesignPatterns
         private IWebDriver webDriver = null;
         private TimeSpan waitForElement = TimeSpan.FromSeconds(5);
 
-        public WebDriverFacade(string browser)
+        public WebDriverFacade(Browsers browser)
         {
             WebDriverFactory factory = new WebDriverFactory();
             webDriver = factory.CreateInstance(browser);

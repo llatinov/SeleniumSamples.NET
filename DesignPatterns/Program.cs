@@ -7,7 +7,7 @@ namespace AutomationRhapsody.DesignPatterns
     {
         static void Main(string[] args)
         {
-            string browser = "Chrome";
+            Browsers browser = Browsers.Chrome;
             WebDriverFacade webDriver = new WebDriverFacade(browser);
             webDriver.Start("http://automationrhapsody.com/examples/utf8icons.html");
 

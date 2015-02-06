@@ -1,16 +1,21 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
 
 namespace AutomationRhapsody.DesignPatterns
 {
-    class WebDriverFactory
+    public class WebDriverFactory
     {
-        public IWebDriver CreateInstance(string browser)
+        public IWebDriver CreateInstance(Browsers browser)
         {
-            if ("Chrome".ToLower() == browser.ToLower())
+            if (Browsers.Chrome == browser)
             {
                 return new ChromeDriver();
+            }
+            else if (Browsers.IE == browser)
+            {
+                return new InternetExplorerDriver();
             }
             else
             {
