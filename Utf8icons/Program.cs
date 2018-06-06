@@ -9,7 +9,7 @@ namespace AutomationRhapsody.Utf8icons
         {
             // Launch browser
             IWebDriver webDriver = new FirefoxDriver();
-            webDriver.Url = "http://automationrhapsody.com/examples/utf8icons.html";
+            webDriver.Url = "https://automationrhapsody.com/examples/utf8icons/utf8icons.html";
             webDriver.Navigate();
 
             // Locate element
